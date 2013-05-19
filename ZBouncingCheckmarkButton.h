@@ -11,5 +11,6 @@
 @interface ZBouncingCheckmarkButton : UIButton
 
 + (ZBouncingCheckmarkButton*)button;
++ (ZBouncingCheckmarkButton*)buttonWithActiveImage:(UIImage*)activeImage inactiveImage:(UIImage*)inactiveImage;
 
 @end

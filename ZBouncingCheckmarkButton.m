@@ -43,6 +43,22 @@
     return button;
 }
 
++ (ZBouncingCheckmarkButton*)buttonWithActiveImage:(UIImage*)activeImage inactiveImage:(UIImage*)inactiveImage
+{
+    ZBouncingCheckmarkButton *button = [ZBouncingCheckmarkButton buttonWithType:UIButtonTypeCustom];
+    [button setActiveImage:activeImage];
+    [button setInactiveImage:inactiveImage];
+    
+    [button setBackgroundImage:button.inactiveImage forState:UIControlStateNormal];
+    [button setFrame:CGRectMake(0, 0, button.inactiveImage.size.width, button.inactiveImage.size.height)];
+    
+    [button addTarget:button action:@selector(buttonDown:) forControlEvents:UIControlEventTouchDown];
+    [button addTarget:button action:@selector(buttonUp:) forControlEvents:UIControlEventTouchUpOutside];
+    [button addTarget:button action:@selector(buttonUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -123,14 +139,14 @@
     
     if(button.tag)
     {
-        [button setBackgroundImage:[UIImage imageNamed:INACTIVE_IMAGE] forState:UIControlStateNormal];
+        [button setBackgroundImage:self.inactiveImage forState:UIControlStateNormal];
         button.tag = 0;
         
     }
     else
     {
         button.tag = 1;
-        [button setBackgroundImage:[UIImage imageNamed:ACTIVE_IMAGE] forState:UIControlStateNormal];
+        [button setBackgroundImage:self.activeImage forState:UIControlStateNormal];
         
     }
 }

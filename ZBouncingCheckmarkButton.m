@@ -70,6 +70,27 @@
     return self;
 }
 
+- (id)initWithActiveImage:(UIImage*)activeImage inactiveImage:(UIImage*)inactiveImage
+{
+    self = [ZBouncingCheckmarkButton buttonWithType:UIButtonTypeCustom];
+    
+    if (self)
+    {
+        [self setActiveImage:activeImage];
+        [self setInactiveImage:inactiveImage];
+        
+        [self setBackgroundImage:self.inactiveImage forState:UIControlStateNormal];
+        [self setFrame:CGRectMake(0, 0, self.inactiveImage.size.width, self.inactiveImage.size.height)];
+        
+        [self addTarget:self action:@selector(buttonDown:) forControlEvents:UIControlEventTouchDown];
+        [self addTarget:self action:@selector(buttonUp:) forControlEvents:UIControlEventTouchUpOutside];
+        [self addTarget:self action:@selector(buttonUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return self;
+
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

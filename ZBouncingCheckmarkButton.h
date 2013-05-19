@@ -12,5 +12,5 @@
 
 + (ZBouncingCheckmarkButton*)button;
 + (ZBouncingCheckmarkButton*)buttonWithActiveImage:(UIImage*)activeImage inactiveImage:(UIImage*)inactiveImage;
-
+- (id)initWithActiveImage:(UIImage*)activeImage inactiveImage:(UIImage*)inactiveImage;
 @end

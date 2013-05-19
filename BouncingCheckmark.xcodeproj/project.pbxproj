@@ -27,6 +27,10 @@
 		29E04DE1171C8578006B597F /* Message_Checking_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E04DDF171C8578006B597F /* Message_Checking_outline.png */; };
 		29E04DE2171C8578006B597F /* Message_Checking_outline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E04DE0171C8578006B597F /* Message_Checking_outline@2x.png */; };
 		29E04DE5171C9255006B597F /* ZBouncingCheckmarkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E04DE4171C9255006B597F /* ZBouncingCheckmarkButton.m */; };
+		29FC732217493DEE007D2CC5 /* Feed_LikeButton_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 29FC731E17493DEE007D2CC5 /* Feed_LikeButton_Selected.png */; };
+		29FC732317493DEE007D2CC5 /* Feed_LikeButton_Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29FC731F17493DEE007D2CC5 /* Feed_LikeButton_Selected@2x.png */; };
+		29FC732417493DEE007D2CC5 /* Feed_LikeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 29FC732017493DEE007D2CC5 /* Feed_LikeButton.png */; };
+		29FC732517493DEE007D2CC5 /* Feed_LikeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29FC732117493DEE007D2CC5 /* Feed_LikeButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,10 @@
 		29E04DE0171C8578006B597F /* Message_Checking_outline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_Checking_outline@2x.png"; sourceTree = "<group>"; };
 		29E04DE3171C9255006B597F /* ZBouncingCheckmarkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBouncingCheckmarkButton.h; sourceTree = "<group>"; };
 		29E04DE4171C9255006B597F /* ZBouncingCheckmarkButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBouncingCheckmarkButton.m; sourceTree = "<group>"; };
+		29FC731E17493DEE007D2CC5 /* Feed_LikeButton_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feed_LikeButton_Selected.png; sourceTree = "<group>"; };
+		29FC731F17493DEE007D2CC5 /* Feed_LikeButton_Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feed_LikeButton_Selected@2x.png"; sourceTree = "<group>"; };
+		29FC732017493DEE007D2CC5 /* Feed_LikeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feed_LikeButton.png; sourceTree = "<group>"; };
+		29FC732117493DEE007D2CC5 /* Feed_LikeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feed_LikeButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,10 @@
 		29E04DA1171C73DB006B597F = {
 			isa = PBXGroup;
 			children = (
+				29FC731E17493DEE007D2CC5 /* Feed_LikeButton_Selected.png */,
+				29FC731F17493DEE007D2CC5 /* Feed_LikeButton_Selected@2x.png */,
+				29FC732017493DEE007D2CC5 /* Feed_LikeButton.png */,
+				29FC732117493DEE007D2CC5 /* Feed_LikeButton@2x.png */,
 				29E04DE3171C9255006B597F /* ZBouncingCheckmarkButton.h */,
 				29E04DE4171C9255006B597F /* ZBouncingCheckmarkButton.m */,
 				29E04DDF171C8578006B597F /* Message_Checking_outline.png */,
@@ -218,6 +230,10 @@
 				29E04DDC171C740E006B597F /* Message_Checking@2x.png in Resources */,
 				29E04DE1171C8578006B597F /* Message_Checking_outline.png in Resources */,
 				29E04DE2171C8578006B597F /* Message_Checking_outline@2x.png in Resources */,
+				29FC732217493DEE007D2CC5 /* Feed_LikeButton_Selected.png in Resources */,
+				29FC732317493DEE007D2CC5 /* Feed_LikeButton_Selected@2x.png in Resources */,
+				29FC732417493DEE007D2CC5 /* Feed_LikeButton.png in Resources */,
+				29FC732517493DEE007D2CC5 /* Feed_LikeButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +371,7 @@
 				29E04DCF171C73DB006B597F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

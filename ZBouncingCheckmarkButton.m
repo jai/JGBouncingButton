@@ -72,7 +72,7 @@
 
 - (id)initWithActiveImage:(UIImage*)activeImage inactiveImage:(UIImage*)inactiveImage
 {
-    self = [ZBouncingCheckmarkButton buttonWithType:UIButtonTypeCustom];
+    self = [[self class] buttonWithType:UIButtonTypeCustom];
     
     if (self)
     {

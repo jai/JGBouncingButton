@@ -89,6 +89,18 @@
 }
 */
 
+- (void)setSelected:(BOOL)selected {
+    [super setSelected:selected];
+    
+    if (selected) {
+        [self setImage:self.activeImage forState:UIControlStateNormal];
+        [self setImage:self.inactiveImage forState:UIControlStateHighlighted];
+    } else {
+        [self setImage:self.inactiveImage forState:UIControlStateNormal];
+        [self setImage:self.activeImage forState:UIControlStateHighlighted];
+    }
+}
+
 #pragma mark - Button Action Methods
 
 - (void)buttonDown:(UIButton*)button

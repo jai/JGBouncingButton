@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2942DF49186ED82F00331C73 /* checkmark_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 2942DF45186ED82F00331C73 /* checkmark_green.png */; };
+		2942DF4A186ED82F00331C73 /* checkmark_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2942DF46186ED82F00331C73 /* checkmark_green@2x.png */; };
+		2942DF4B186ED82F00331C73 /* checkmark_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 2942DF47186ED82F00331C73 /* checkmark_white.png */; };
+		2942DF4C186ED82F00331C73 /* checkmark_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2942DF48186ED82F00331C73 /* checkmark_white@2x.png */; };
 		29E04DAE171C73DB006B597F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E04DAD171C73DB006B597F /* UIKit.framework */; };
 		29E04DB0171C73DB006B597F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E04DAF171C73DB006B597F /* Foundation.framework */; };
 		29E04DB2171C73DB006B597F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E04DB1171C73DB006B597F /* CoreGraphics.framework */; };
@@ -34,6 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2942DF45186ED82F00331C73 /* checkmark_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark_green.png; sourceTree = "<group>"; };
+		2942DF46186ED82F00331C73 /* checkmark_green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark_green@2x.png"; sourceTree = "<group>"; };
+		2942DF47186ED82F00331C73 /* checkmark_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark_white.png; sourceTree = "<group>"; };
+		2942DF48186ED82F00331C73 /* checkmark_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark_white@2x.png"; sourceTree = "<group>"; };
 		29E04DAA171C73DB006B597F /* BouncingCheckmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BouncingCheckmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E04DAD171C73DB006B597F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		29E04DAF171C73DB006B597F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +93,10 @@
 		29E04DA1171C73DB006B597F = {
 			isa = PBXGroup;
 			children = (
+				2942DF45186ED82F00331C73 /* checkmark_green.png */,
+				2942DF46186ED82F00331C73 /* checkmark_green@2x.png */,
+				2942DF47186ED82F00331C73 /* checkmark_white.png */,
+				2942DF48186ED82F00331C73 /* checkmark_white@2x.png */,
 				29FC731E17493DEE007D2CC5 /* Feed_LikeButton_Selected.png */,
 				29FC731F17493DEE007D2CC5 /* Feed_LikeButton_Selected@2x.png */,
 				29FC732017493DEE007D2CC5 /* Feed_LikeButton.png */,
@@ -222,6 +234,8 @@
 				29E04DB8171C73DB006B597F /* InfoPlist.strings in Resources */,
 				29E04DC0171C73DB006B597F /* Default.png in Resources */,
 				29E04DC2171C73DB006B597F /* Default@2x.png in Resources */,
+				2942DF4A186ED82F00331C73 /* checkmark_green@2x.png in Resources */,
+				2942DF4C186ED82F00331C73 /* checkmark_white@2x.png in Resources */,
 				29E04DC4171C73DB006B597F /* Default-568h@2x.png in Resources */,
 				29E04DCA171C73DB006B597F /* ZViewController.xib in Resources */,
 				29E04DD6171C73ED006B597F /* LICENSE.md in Resources */,
@@ -229,11 +243,13 @@
 				29E04DDB171C740E006B597F /* Message_Checking.png in Resources */,
 				29E04DDC171C740E006B597F /* Message_Checking@2x.png in Resources */,
 				29E04DE1171C8578006B597F /* Message_Checking_outline.png in Resources */,
+				2942DF4B186ED82F00331C73 /* checkmark_white.png in Resources */,
 				29E04DE2171C8578006B597F /* Message_Checking_outline@2x.png in Resources */,
 				29FC732217493DEE007D2CC5 /* Feed_LikeButton_Selected.png in Resources */,
 				29FC732317493DEE007D2CC5 /* Feed_LikeButton_Selected@2x.png in Resources */,
 				29FC732417493DEE007D2CC5 /* Feed_LikeButton.png in Resources */,
 				29FC732517493DEE007D2CC5 /* Feed_LikeButton@2x.png in Resources */,
+				2942DF49186ED82F00331C73 /* checkmark_green.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

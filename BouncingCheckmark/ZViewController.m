@@ -42,6 +42,7 @@
     
     ZBouncingCheckmarkButton *button = [ZBouncingCheckmarkButton button];
     [self.view addSubview:button];
+    button.center = self.view.center;
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,8 +10,8 @@
 #import <QuartzCore/QuartzCore.h>
 #import "SKBounceAnimation.h"
 
-#define ACTIVE_IMAGE @"Feed_LikeButton_Selected"
-#define INACTIVE_IMAGE @"Feed_LikeButton"
+#define ACTIVE_IMAGE @"checkmark_green"
+#define INACTIVE_IMAGE @"checkmark_white"
 
 @interface ZBouncingCheckmarkButton()
 {
@@ -29,18 +29,7 @@
 
 + (ZBouncingCheckmarkButton*)button
 {
-    ZBouncingCheckmarkButton *button = [ZBouncingCheckmarkButton buttonWithType:UIButtonTypeCustom];
-    [button setActiveImage:[UIImage imageNamed:ACTIVE_IMAGE]];
-    [button setInactiveImage:[UIImage imageNamed:INACTIVE_IMAGE]];
-    
-    [button setBackgroundImage:button.inactiveImage forState:UIControlStateNormal];
-    [button setFrame:CGRectMake(0, 0, button.inactiveImage.size.width, button.inactiveImage.size.height)];
-    
-    [button addTarget:button action:@selector(buttonDown:) forControlEvents:UIControlEventTouchDown];
-    [button addTarget:button action:@selector(buttonUp:) forControlEvents:UIControlEventTouchUpOutside];
-    [button addTarget:button action:@selector(buttonUpInside:) forControlEvents:UIControlEventTouchUpInside];
-    
-    return button;
+    return [ZBouncingCheckmarkButton buttonWithActiveImage:[UIImage imageNamed:ACTIVE_IMAGE] inactiveImage:[UIImage imageNamed:INACTIVE_IMAGE]];
 }
 
 + (ZBouncingCheckmarkButton*)buttonWithActiveImage:(UIImage*)activeImage inactiveImage:(UIImage*)inactiveImage

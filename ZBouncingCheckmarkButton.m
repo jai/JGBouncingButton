@@ -54,7 +54,7 @@
     if (self) {
         // Initialization code
         
-
+        
     }
     return self;
 }
@@ -77,17 +77,17 @@
     }
     
     return self;
-
+    
 }
 
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect
+ {
+ // Drawing code
+ }
+ */
 
 - (void)setSelected:(BOOL)selected {
     [super setSelected:selected];
@@ -118,7 +118,6 @@
     scaleBounce.toValue = finalScale;
     scaleBounce.duration = 0.2f;
     scaleBounce.numberOfBounces = 0;
-    
     [button.layer addAnimation:scaleBounce forKey:@"shrink"];
 }
 
@@ -159,18 +158,20 @@
     
     [button.layer addAnimation:scaleBounce forKey:@"expand"];
     
-    if(button.tag)
-    {
-        [button setBackgroundImage:self.inactiveImage forState:UIControlStateNormal];
-        button.tag = 0;
-        
-    }
-    else
-    {
-        button.tag = 1;
-        [button setBackgroundImage:self.activeImage forState:UIControlStateNormal];
-        
-    }
+    //Using 'selected' property instead of tag - other people need to use tag
+    [button setSelected:!button.selected];
+    //    if(button.tag)
+    //    {
+    //        [button setBackgroundImage:self.inactiveImage forState:UIControlStateNormal];
+    //        button.tag = 0;
+    //
+    //    }
+    //    else
+    //    {
+    //        button.tag = 1;
+    //        [button setBackgroundImage:self.activeImage forState:UIControlStateNormal];
+    //        
+    //    }
 }
 
 @end

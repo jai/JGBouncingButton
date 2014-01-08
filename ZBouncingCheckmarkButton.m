@@ -22,6 +22,11 @@
 @property (strong, nonatomic) UIImage *activeImage;
 @property (strong, nonatomic) UIImage *inactiveImage;
 
+/**
+ *  Sets up the actions that enables the button action animations
+ */
+- (void)setupDefaultActions;
+
 @end
 
 @implementation ZBouncingCheckmarkButton
@@ -41,9 +46,11 @@
     [button setBackgroundImage:button.inactiveImage forState:UIControlStateNormal];
     [button setFrame:CGRectMake(0, 0, button.inactiveImage.size.width, button.inactiveImage.size.height)];
     
-    [button addTarget:button action:@selector(buttonDown:) forControlEvents:UIControlEventTouchDown];
-    [button addTarget:button action:@selector(buttonUp:) forControlEvents:UIControlEventTouchUpOutside];
-    [button addTarget:button action:@selector(buttonUpInside:) forControlEvents:UIControlEventTouchUpInside];
+//    [button addTarget:button action:@selector(buttonDown:) forControlEvents:UIControlEventTouchDown];
+//    [button addTarget:button action:@selector(buttonUp:) forControlEvents:UIControlEventTouchUpOutside];
+//    [button addTarget:button action:@selector(buttonUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [button setupDefaultActions];
     
     return button;
 }
@@ -71,13 +78,21 @@
         [self setBackgroundImage:self.inactiveImage forState:UIControlStateNormal];
         [self setFrame:CGRectMake(0, 0, self.inactiveImage.size.width, self.inactiveImage.size.height)];
         
-        [self addTarget:self action:@selector(buttonDown:) forControlEvents:UIControlEventTouchDown];
-        [self addTarget:self action:@selector(buttonUp:) forControlEvents:UIControlEventTouchUpOutside];
-        [self addTarget:self action:@selector(buttonUpInside:) forControlEvents:UIControlEventTouchUpInside];
+//        [self addTarget:self action:@selector(buttonDown:) forControlEvents:UIControlEventTouchDown];
+//        [self addTarget:self action:@selector(buttonUp:) forControlEvents:UIControlEventTouchUpOutside];
+//        [self addTarget:self action:@selector(buttonUpInside:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self setupDefaultActions];
     }
     
     return self;
     
+}
+
+- (void)setupDefaultActions {
+    [self addTarget:self action:@selector(buttonDown:) forControlEvents:UIControlEventTouchDown];
+    [self addTarget:self action:@selector(buttonUp:) forControlEvents:UIControlEventTouchUpOutside];
+    [self addTarget:self action:@selector(buttonUpInside:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /*
@@ -172,6 +187,12 @@
     //        [button setBackgroundImage:self.activeImage forState:UIControlStateNormal];
     //        
     //    }
+}
+
+- (void)removeTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents {
+    [super removeTarget:target action:action forControlEvents:controlEvents];
+    
+    [self setupDefaultActions];
 }
 
 @end

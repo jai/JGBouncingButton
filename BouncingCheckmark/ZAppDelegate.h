@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class ZViewController;
+@class ZBouncingCheckmarkTestViewController;
 
 @interface ZAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ZViewController *viewController;
+@property (strong, nonatomic) ZBouncingCheckmarkTestViewController *viewController;
 
 @end

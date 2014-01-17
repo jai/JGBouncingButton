@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZViewController : UIViewController
+@interface ZBouncingCheckmarkTestViewController : UIViewController
 
 @end

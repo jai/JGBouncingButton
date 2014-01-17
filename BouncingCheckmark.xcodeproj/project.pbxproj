@@ -20,8 +20,8 @@
 		29E04DC0171C73DB006B597F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E04DBF171C73DB006B597F /* Default.png */; };
 		29E04DC2171C73DB006B597F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E04DC1171C73DB006B597F /* Default@2x.png */; };
 		29E04DC4171C73DB006B597F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E04DC3171C73DB006B597F /* Default-568h@2x.png */; };
-		29E04DC7171C73DB006B597F /* ZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E04DC6171C73DB006B597F /* ZViewController.m */; };
-		29E04DCA171C73DB006B597F /* ZViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29E04DC8171C73DB006B597F /* ZViewController.xib */; };
+		29E04DC7171C73DB006B597F /* ZBouncingCheckmarkTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E04DC6171C73DB006B597F /* ZBouncingCheckmarkTestViewController.m */; };
+		29E04DCA171C73DB006B597F /* ZBouncingCheckmarkTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29E04DC8171C73DB006B597F /* ZBouncingCheckmarkTestViewController.xib */; };
 		29E04DD6171C73ED006B597F /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 29E04DD1171C73ED006B597F /* LICENSE.md */; };
 		29E04DD7171C73ED006B597F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 29E04DD2171C73ED006B597F /* README.md */; };
 		29E04DD8171C73ED006B597F /* SKBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E04DD5171C73ED006B597F /* SKBounceAnimation.m */; };
@@ -55,9 +55,9 @@
 		29E04DBF171C73DB006B597F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		29E04DC1171C73DB006B597F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		29E04DC3171C73DB006B597F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		29E04DC5171C73DB006B597F /* ZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZViewController.h; sourceTree = "<group>"; };
-		29E04DC6171C73DB006B597F /* ZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZViewController.m; sourceTree = "<group>"; };
-		29E04DC9171C73DB006B597F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZViewController.xib; sourceTree = "<group>"; };
+		29E04DC5171C73DB006B597F /* ZBouncingCheckmarkTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBouncingCheckmarkTestViewController.h; sourceTree = "<group>"; };
+		29E04DC6171C73DB006B597F /* ZBouncingCheckmarkTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBouncingCheckmarkTestViewController.m; sourceTree = "<group>"; };
+		29E04DC9171C73DB006B597F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZBouncingCheckmarkTestViewController.xib; sourceTree = "<group>"; };
 		29E04DD1171C73ED006B597F /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
 		29E04DD2171C73ED006B597F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		29E04DD4171C73ED006B597F /* SKBounceAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKBounceAnimation.h; sourceTree = "<group>"; };
@@ -138,9 +138,9 @@
 			children = (
 				29E04DBC171C73DB006B597F /* ZAppDelegate.h */,
 				29E04DBD171C73DB006B597F /* ZAppDelegate.m */,
-				29E04DC5171C73DB006B597F /* ZViewController.h */,
-				29E04DC6171C73DB006B597F /* ZViewController.m */,
-				29E04DC8171C73DB006B597F /* ZViewController.xib */,
+				29E04DC5171C73DB006B597F /* ZBouncingCheckmarkTestViewController.h */,
+				29E04DC6171C73DB006B597F /* ZBouncingCheckmarkTestViewController.m */,
+				29E04DC8171C73DB006B597F /* ZBouncingCheckmarkTestViewController.xib */,
 				29E04DB4171C73DB006B597F /* Supporting Files */,
 			);
 			path = BouncingCheckmark;
@@ -237,7 +237,7 @@
 				2942DF4A186ED82F00331C73 /* checkmark_green@2x.png in Resources */,
 				2942DF4C186ED82F00331C73 /* checkmark_white@2x.png in Resources */,
 				29E04DC4171C73DB006B597F /* Default-568h@2x.png in Resources */,
-				29E04DCA171C73DB006B597F /* ZViewController.xib in Resources */,
+				29E04DCA171C73DB006B597F /* ZBouncingCheckmarkTestViewController.xib in Resources */,
 				29E04DD6171C73ED006B597F /* LICENSE.md in Resources */,
 				29E04DD7171C73ED006B597F /* README.md in Resources */,
 				29E04DDB171C740E006B597F /* Message_Checking.png in Resources */,
@@ -262,7 +262,7 @@
 			files = (
 				29E04DBA171C73DB006B597F /* main.m in Sources */,
 				29E04DBE171C73DB006B597F /* ZAppDelegate.m in Sources */,
-				29E04DC7171C73DB006B597F /* ZViewController.m in Sources */,
+				29E04DC7171C73DB006B597F /* ZBouncingCheckmarkTestViewController.m in Sources */,
 				29E04DD8171C73ED006B597F /* SKBounceAnimation.m in Sources */,
 				29E04DE5171C9255006B597F /* ZBouncingCheckmarkButton.m in Sources */,
 			);
@@ -279,12 +279,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		29E04DC8171C73DB006B597F /* ZViewController.xib */ = {
+		29E04DC8171C73DB006B597F /* ZBouncingCheckmarkTestViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				29E04DC9171C73DB006B597F /* en */,
 			);
-			name = ZViewController.xib;
+			name = ZBouncingCheckmarkTestViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

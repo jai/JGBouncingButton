@@ -8,7 +8,7 @@
 
 #import "ZAppDelegate.h"
 
-#import "ZViewController.h"
+#import "ZBouncingCheckmarkTestViewController.h"
 
 @implementation ZAppDelegate
 
@@ -16,7 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ZViewController alloc] initWithNibName:@"ZViewController" bundle:nil];
+    self.viewController = [[ZBouncingCheckmarkTestViewController alloc] initWithNibName:@"ZViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

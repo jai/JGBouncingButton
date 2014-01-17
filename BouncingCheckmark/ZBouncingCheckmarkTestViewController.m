@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 com.zodio. All rights reserved.
 //
 
-#import "ZViewController.h"
+#import "ZBouncingCheckmarkTestViewController.h"
 #import "SKBounceAnimation.h"
 #import "ZBouncingCheckmarkButton.h"
 
-@interface ZViewController ()
+@interface ZBouncingCheckmarkTestViewController ()
 {
     UIImage *_activeImage;
     UIImage *_inactiveImage;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation ZViewController
+@implementation ZBouncingCheckmarkTestViewController
 
 
 - (void)viewDidLoad

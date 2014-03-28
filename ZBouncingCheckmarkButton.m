@@ -43,7 +43,7 @@
     [button setActiveImage:activeImage];
     [button setInactiveImage:inactiveImage];
     
-    [button setBackgroundImage:button.inactiveImage forState:UIControlStateNormal];
+//    [button setBackgroundImage:button.inactiveImage forState:UIControlStateNormal];
     [button setFrame:CGRectMake(0, 0, button.inactiveImage.size.width, button.inactiveImage.size.height)];
     
 //    [button addTarget:button action:@selector(buttonDown:) forControlEvents:UIControlEventTouchDown];
@@ -75,7 +75,7 @@
         [self setActiveImage:activeImage];
         [self setInactiveImage:inactiveImage];
         
-        [self setBackgroundImage:self.inactiveImage forState:UIControlStateNormal];
+//        [self setBackgroundImage:self.inactiveImage forState:UIControlStateNormal];
         [self setFrame:CGRectMake(0, 0, self.inactiveImage.size.width, self.inactiveImage.size.height)];
         
 //        [self addTarget:self action:@selector(buttonDown:) forControlEvents:UIControlEventTouchDown];
